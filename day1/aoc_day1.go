@@ -58,7 +58,7 @@ func day1(xd []string){
 }
 
 func main(){
-  dat, err := os.ReadFile("input/input_01.txt")
+  dat, err := os.ReadFile("input_01.txt")
   check(err)
   xd := strings.Split(string(dat),"\n")
   //fmt.Println(xd)

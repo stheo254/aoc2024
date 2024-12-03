@@ -1,3 +1,3 @@
-module aoc01
+module aoc
 
 go 1.23.3
