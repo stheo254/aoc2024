@@ -43,13 +43,13 @@ func day1(xd []string){
   }
   fmt.Println("part1",diff)
   similarty := 0
-  for _, element := range left{
+  for Index, element := range left{
     occurance := 0
-    for _, rElement := range right{
+    for rIndex, rElement := range right{
       if element == rElement{
         occurance +=1
-//      }else if rIndex < index && element != rElement{
-//        break
+      }else if rIndex > Index && element != rElement{
+        break
       }
     }
     similarty += occurance * element
